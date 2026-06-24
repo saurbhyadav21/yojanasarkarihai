@@ -437,3 +437,896 @@
     </div>
 
 </section>
+
+<!-- =======================================
+POPULAR CATEGORIES
+======================================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Explore Schemes By Category
+            </h2>
+
+            <p class="sub-title">
+                Find Government Schemes According To Your Needs
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center h-100">
+
+                    <div class="display-5 mb-3">
+                        👨‍🌾
+                    </div>
+
+                    <h5>Farmer Schemes</h5>
+
+                    <p class="text-muted">
+                        PM Kisan, KCC, Crop Insurance
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center h-100">
+
+                    <div class="display-5 mb-3">
+                        👩
+                    </div>
+
+                    <h5>Women Schemes</h5>
+
+                    <p class="text-muted">
+                        Sukanya, Ujjwala, Matru Vandana
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center h-100">
+
+                    <div class="display-5 mb-3">
+                        🎓
+                    </div>
+
+                    <h5>Scholarship</h5>
+
+                    <p class="text-muted">
+                        NSP, Pre & Post Matric
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center h-100">
+
+                    <div class="display-5 mb-3">
+                        👴
+                    </div>
+
+                    <h5>Pension Schemes</h5>
+
+                    <p class="text-muted">
+                        Old Age, Widow Pension
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+STATE WISE SCHEMES
+======================================= -->
+
+<section class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                State Wise Schemes
+            </h2>
+
+            <p class="sub-title">
+                Select Your State
+            </p>
+
+        </div>
+
+
+        <div class="row g-3">
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Uttar Pradesh
+                </button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Delhi
+                </button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Bihar
+                </button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Rajasthan
+                </button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Haryana
+                </button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <button class="btn btn-outline-primary w-100 rounded-pill py-3">
+                    Punjab
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+CENTRAL GOVERNMENT SCHEMES
+======================================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Popular Central Government Schemes
+            </h2>
+
+            <p class="sub-title">
+                Most Searched Schemes In India
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100 p-4">
+
+                    <span class="badge bg-success mb-3">
+                        Popular
+                    </span>
+
+                    <h4>
+                        PM Kisan Yojana
+                    </h4>
+
+                    <p class="text-muted">
+                        Financial assistance for farmers.
+                    </p>
+
+                    <a href="#" class="btn btn-primary rounded-pill">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100 p-4">
+
+                    <span class="badge bg-warning mb-3">
+                        Trending
+                    </span>
+
+                    <h4>
+                        PM Awas Yojana
+                    </h4>
+
+                    <p class="text-muted">
+                        Housing assistance scheme.
+                    </p>
+
+                    <a href="#" class="btn btn-primary rounded-pill">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100 p-4">
+
+                    <span class="badge bg-danger mb-3">
+                        Featured
+                    </span>
+
+                    <h4>
+                        Ayushman Bharat
+                    </h4>
+
+                    <p class="text-muted">
+                        Health insurance benefits.
+                    </p>
+
+                    <a href="#" class="btn btn-primary rounded-pill">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+TOOLS & CALCULATORS
+======================================= -->
+
+<section class="py-5"
+style="background:#ecfdf5;">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Eligibility Tools & Calculators
+            </h2>
+
+            <p class="sub-title">
+                Check Eligibility, Benefits and Calculations
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center">
+
+                    <div class="display-6 text-success mb-3">
+                        ✔
+                    </div>
+
+                    <h5>
+                        PM Awas Eligibility Checker
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center">
+
+                    <div class="display-6 text-success mb-3">
+                        ✔
+                    </div>
+
+                    <h5>
+                        PM Kisan Eligibility Checker
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center">
+
+                    <div class="display-6 text-success mb-3">
+                        ✔
+                    </div>
+
+                    <h5>
+                        Subsidy Calculator
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card card-custom p-4 text-center">
+
+                    <div class="display-6 text-success mb-3">
+                        ✔
+                    </div>
+
+                    <h5>
+                        Age Calculator
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================
+STATUS CHECK SECTION
+======================================= -->
+
+<section class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Status Check Services
+            </h2>
+
+            <p class="sub-title">
+                Check Your Application Status Easily
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom p-4">
+
+                    <h4>
+                        PM Kisan Status
+                    </h4>
+
+                    <p class="text-muted">
+                        Check installment and beneficiary status.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary rounded-pill">
+                        Check Status
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom p-4">
+
+                    <h4>
+                        PM Awas Status
+                    </h4>
+
+                    <p class="text-muted">
+                        Track application status online.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary rounded-pill">
+                        Check Status
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom p-4">
+
+                    <h4>
+                        Ayushman Card Status
+                    </h4>
+
+                    <p class="text-muted">
+                        Verify card and beneficiary details.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary rounded-pill">
+                        Check Status
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+LATEST YOJANA UPDATES
+===================================== -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Latest Yojana Updates
+            </h2>
+
+            <p class="sub-title">
+                Stay Updated With New Government Schemes
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100">
+
+                    <img src="https://via.placeholder.com/600x300"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-primary">
+                            PM Kisan
+                        </span>
+
+                        <h5 class="mt-3">
+                            PM Kisan 20th Installment Date Released
+                        </h5>
+
+                        <p class="text-muted">
+                            Know the latest installment date and beneficiary list.
+                        </p>
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100">
+
+                    <img src="https://via.placeholder.com/600x300"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success">
+                            PM Awas
+                        </span>
+
+                        <h5 class="mt-3">
+                            PM Awas Yojana New List 2026
+                        </h5>
+
+                        <p class="text-muted">
+                            Check your name in the latest beneficiary list.
+                        </p>
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="card card-custom h-100">
+
+                    <img src="https://via.placeholder.com/600x300"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark">
+                            Ayushman Bharat
+                        </span>
+
+                        <h5 class="mt-3">
+                            Ayushman Card Registration Process
+                        </h5>
+
+                        <p class="text-muted">
+                            Step-by-step guide for registration.
+                        </p>
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+FAQ SECTION
+===================================== -->
+
+<section class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+
+                        How to apply for government schemes?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq1"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        You can apply through the official portal or offline process.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+
+                        How to check scheme eligibility?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq2"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Use our eligibility tools and official guidelines.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+
+                        Is this an official government website?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq3"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        No. We provide information and guides only.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+TRUST SECTION
+===================================== -->
+
+<section class="py-5"
+style="background:#1D4ED8; color:white;">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+
+                <h2>
+                    500+
+                </h2>
+
+                <p>
+                    Government Schemes
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2>
+                    50+
+                </h2>
+
+                <p>
+                    Eligibility Tools
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2>
+                    28+
+                </h2>
+
+                <p>
+                    State Categories
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2>
+                    24x7
+                </h2>
+
+                <p>
+                    Information Access
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+FOOTER
+===================================== -->
+
+<footer style="background:#111827;color:white;">
+
+    <div class="container py-5">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h4>
+                    Yojana Sarkari Hai
+                </h4>
+
+                <p class="text-light mt-3">
+
+                    Find government schemes, eligibility,
+                    benefits, status check and useful tools.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="col-lg-2">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="#" class="text-light">Home</a></li>
+
+                    <li><a href="#" class="text-light">Schemes</a></li>
+
+                    <li><a href="#" class="text-light">Tools</a></li>
+
+                    <li><a href="#" class="text-light">News</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-lg-3">
+
+                <h5>
+                    Important Pages
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="#" class="text-light">About Us</a></li>
+
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+
+                    <li><a href="#" class="text-light">Privacy Policy</a></li>
+
+                    <li><a href="#" class="text-light">Disclaimer</a></li>
+
+                    <li><a href="#" class="text-light">Terms & Conditions</a></li>
+
+                    <li><a href="#" class="text-light">Sitemap</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-lg-3">
+
+                <h5>
+                    Popular Schemes
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="#" class="text-light">PM Kisan</a></li>
+
+                    <li><a href="#" class="text-light">PM Awas</a></li>
+
+                    <li><a href="#" class="text-light">Ayushman Bharat</a></li>
+
+                    <li><a href="#" class="text-light">E Shram Card</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr class="mt-4">
+
+        <div class="text-center">
+
+            © 2026 Yojana Sarkari Hai. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
