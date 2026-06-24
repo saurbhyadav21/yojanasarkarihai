@@ -1,126 +1,434 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojana Sarkari Hai</title>
+    <title>Yojana Sarkari Hai - Sarkari Yojana Information & Tools</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
     <style>
+
         body{
-            background:#f8fafc;
+            font-family: 'Poppins', sans-serif;
+            background: #F8FAFC;
+            color: #111827;
         }
+
+        a{
+            text-decoration:none;
+        }
+
+        /* Header */
 
         .navbar{
             background:#fff;
-            box-shadow:0 2px 10px rgba(0,0,0,.08);
+            box-shadow:0 3px 15px rgba(0,0,0,.08);
         }
+
+        .navbar-brand{
+            font-size:28px;
+            font-weight:700;
+            color:#1D4ED8 !important;
+        }
+
+        .nav-link{
+            color:#374151;
+            font-weight:500;
+            margin-left:12px;
+        }
+
+        .nav-link:hover{
+            color:#1D4ED8;
+        }
+
+        .scheme-btn{
+            background:#F97316;
+            border:none;
+            color:white;
+            border-radius:12px;
+            padding:10px 20px;
+            font-weight:600;
+        }
+
+        .scheme-btn:hover{
+            background:#ea580c;
+        }
+
+        /* Hero */
 
         .hero{
-            background:linear-gradient(135deg,#1d4ed8,#2563eb);
-            color:#fff;
-            padding:90px 0;
+            background:linear-gradient(135deg,#1D4ED8,#2563EB);
+            color:white;
+            padding:100px 0;
         }
 
-        .section-title{
-            font-size:32px;
+        .hero h1{
+            font-size:52px;
             font-weight:700;
-            margin-bottom:30px;
         }
+
+        .hero p{
+            color:#e5e7eb;
+            font-size:18px;
+        }
+
+        .search-box{
+            background:white;
+            padding:12px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.15);
+        }
+
+        .search-box input{
+            border:none;
+            box-shadow:none !important;
+        }
+
+        .search-btn{
+            background:#F97316;
+            border:none;
+            color:white;
+            border-radius:15px;
+            font-weight:600;
+        }
+
+        .search-btn:hover{
+            background:#ea580c;
+        }
+
+        /* Tags */
+
+        .tag{
+            background:rgba(255,255,255,.15);
+            padding:10px 18px;
+            border-radius:30px;
+            color:white;
+            display:inline-block;
+            margin:6px;
+            font-size:14px;
+        }
+
+        /* cards */
 
         .card-custom{
             border:none;
             border-radius:20px;
+            background:white;
+            box-shadow:0 4px 18px rgba(0,0,0,.08);
             transition:.3s;
-            box-shadow:0 3px 15px rgba(0,0,0,.08);
         }
 
         .card-custom:hover{
             transform:translateY(-5px);
         }
 
-        .footer{
-            background:#0f172a;
-            color:white;
+        .section-title{
+            font-size:40px;
+            font-weight:700;
         }
 
-        .footer a{
-            color:#cbd5e1;
-            text-decoration:none;
+        .sub-title{
+            color:#6b7280;
         }
 
-        .footer a:hover{
-            color:white;
+        .finder{
+            margin-top:-60px;
         }
+
+        .find-btn{
+            background:#1D4ED8;
+            color:white;
+            border:none;
+            border-radius:15px;
+            font-weight:600;
+            padding:14px;
+        }
+
+        .find-btn:hover{
+            background:#1e40af;
+        }
+
     </style>
+
 </head>
 <body>
+
 
 <!-- Header -->
 
 <nav class="navbar navbar-expand-lg sticky-top">
+
     <div class="container">
 
-        <a class="navbar-brand fw-bold text-primary" href="#">
+        <a href="#" class="navbar-brand">
             Yojana Sarkari Hai
         </a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
+
 
         <div class="collapse navbar-collapse" id="menu">
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Schemes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">State Wise</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Documents</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Latest News</a></li>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Schemes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Tools</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Documents</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">State Wise</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">News</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <button class="scheme-btn">
+                        Scheme Finder
+                    </button>
+                </li>
+
             </ul>
 
         </div>
 
     </div>
+
 </nav>
 
 
-<!-- Hero -->
+<!-- Hero Section -->
 
-<section class="hero text-center">
+<section class="hero">
 
     <div class="container">
 
-        <h1 class="display-5 fw-bold">
-            Find Government Schemes For You
-        </h1>
+        <div class="row justify-content-center text-center">
 
-        <p class="mt-3">
-            Search Sarkari Yojana, Eligibility, Benefits and Application Details
-        </p>
+            <div class="col-lg-9">
 
-        <div class="row justify-content-center mt-4">
+                <h1>
+                    Find Government Schemes For You
+                </h1>
 
-            <div class="col-lg-7">
+                <p class="mt-4">
 
-                <div class="input-group input-group-lg">
+                    Search Sarkari Yojana, Eligibility,
+                    Benefits, Application Process and
+                    Useful Tools.
+
+                </p>
+
+
+                <div class="search-box mt-5">
+
+                    <div class="input-group">
+
+                        <input type="text"
+                               class="form-control form-control-lg"
+                               placeholder="Search PM Kisan, PM Awas, Ayushman Bharat">
+
+                        <button class="btn search-btn px-4">
+
+                            <i class="bi bi-search"></i>
+                            Search
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mt-4">
+
+                    <span class="tag">
+                        PM Kisan
+                    </span>
+
+                    <span class="tag">
+                        PM Awas
+                    </span>
+
+                    <span class="tag">
+                        Ayushman Bharat
+                    </span>
+
+                    <span class="tag">
+                        E Shram Card
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Yojana For You -->
+
+<section class="finder pb-5">
+
+    <div class="container">
+
+        <div class="card card-custom p-5">
+
+            <div class="text-center">
+
+                <h2 class="section-title">
+                    Yojana For You
+                </h2>
+
+                <p class="sub-title">
+                    Find Schemes According To Your Profile
+                </p>
+
+            </div>
+
+
+            <div class="row mt-4 g-4">
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        Gender
+                    </label>
+
+                    <select class="form-select form-select-lg">
+
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        State
+                    </label>
+
+                    <select class="form-select form-select-lg">
+
+                        <option>Select State</option>
+                        <option>UP</option>
+                        <option>Delhi</option>
+                        <option>Bihar</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        Category
+                    </label>
+
+                    <select class="form-select form-select-lg">
+
+                        <option>Select Category</option>
+                        <option>Farmer</option>
+                        <option>Women</option>
+                        <option>Student</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        Occupation
+                    </label>
+
+                    <select class="form-select form-select-lg">
+
+                        <option>Select Occupation</option>
+                        <option>Farmer</option>
+                        <option>Employee</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        Annual Income
+                    </label>
 
                     <input type="text"
-                           class="form-control"
-                           placeholder="Search PM Kisan, PM Awas, Ayushman Bharat">
-
-                    <button class="btn btn-warning">
-                        Search
-                    </button>
+                           class="form-control form-control-lg"
+                           placeholder="Enter Income">
 
                 </div>
+
+
+                <div class="col-md-4">
+
+                    <label class="mb-2">
+                        Age
+                    </label>
+
+                    <input type="number"
+                           class="form-control form-control-lg"
+                           placeholder="Age">
+
+                </div>
+
+            </div>
+
+
+            <div class="text-center mt-5">
+
+                <button class="find-btn px-5">
+
+                    <i class="bi bi-search"></i>
+
+                    Find Schemes
+
+                </button>
 
             </div>
 
@@ -129,342 +437,3 @@
     </div>
 
 </section>
-
-
-<!-- Search Yojana -->
-
-<section class="py-5">
-
-    <div class="container">
-
-        <h2 class="section-title text-center">
-            Search Popular Yojanas
-        </h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-3">
-                <div class="card card-custom p-4 text-center">
-                    PM Kisan Yojana
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-custom p-4 text-center">
-                    PM Awas Yojana
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-custom p-4 text-center">
-                    Ayushman Bharat
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-custom p-4 text-center">
-                    E Shram Card
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Category Wise -->
-
-<section class="py-5 bg-white">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-Category Wise Schemes
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-👨‍🌾 Farmer
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-👩 Women
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-🎓 Student
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-👴 Pension
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- State Wise -->
-
-<section class="py-5">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-State Wise Schemes
-</h2>
-
-<div class="row g-3">
-
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">UP</button></div>
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">Delhi</button></div>
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">Bihar</button></div>
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">Punjab</button></div>
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">Rajasthan</button></div>
-<div class="col-md-2"><button class="btn btn-outline-primary w-100">MP</button></div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Central Schemes -->
-
-<section class="py-5 bg-white">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-Central Government Schemes
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Kisan Yojana
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Awas Yojana
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-Ayushman Bharat
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Eligibility Calculator -->
-
-<section class="py-5">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-Eligibility & Calculators
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-PM Awas Eligibility Checker
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-PM Kisan Checker
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-EMI Calculator
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card card-custom p-4 text-center">
-Age Calculator
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Status Check -->
-
-<section class="py-5 bg-white">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-Status Check
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Kisan Status
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Awas Status
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-Ayushman Card Status
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Latest News -->
-
-<section class="py-5">
-
-<div class="container">
-
-<h2 class="section-title text-center">
-Latest Yojana Updates
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Kisan 20th Installment Date
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-PM Awas New List
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card card-custom p-4">
-Ayushman Registration
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Footer -->
-
-<footer class="footer py-5">
-
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-3">
-
-<h5>About</h5>
-
-<a href="#">About Us</a><br>
-<a href="#">Contact Us</a><br>
-<a href="#">Disclaimer</a>
-
-</div>
-
-<div class="col-md-3">
-
-<h5>Important Pages</h5>
-
-<a href="#">Privacy Policy</a><br>
-<a href="#">Terms & Conditions</a><br>
-<a href="#">Sitemap</a>
-
-</div>
-
-<div class="col-md-3">
-
-<h5>Categories</h5>
-
-<a href="#">Farmer</a><br>
-<a href="#">Women</a><br>
-<a href="#">Scholarship</a>
-
-</div>
-
-<div class="col-md-3">
-
-<h5>Tools</h5>
-
-<a href="#">Eligibility Checker</a><br>
-<a href="#">EMI Calculator</a><br>
-<a href="#">Age Calculator</a>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="text-center">
-© 2026 Yojana Sarkari Hai. All Rights Reserved.
-</div>
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
-
