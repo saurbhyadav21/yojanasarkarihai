@@ -26,7 +26,7 @@
 
                             <div class="card-body">
 
-                                <form action="{{ route('schemes.store') }}" method="POST"
+                                <form action="{{ route('yojana.store') }}" method="POST"
                                     enctype="multipart/form-data">
 
                                     @csrf
