@@ -1,8 +1,9 @@
-@extends('layouts.admin')
+<x-app-layout>
 
-@section('title','Schemes List')
 
-@section('content')
+{{-- @section('title','Schemes List')
+
+@section('content') --}}
 
 <div class="container-fluid">
 
@@ -19,7 +20,7 @@
 
     <div class="col-md-6 text-end">
 
-        <a href="{{ route('schemes.create') }}"
+        <a href="{{ route('yojana.create') }}"
            class="btn btn-success">
 
             Add New Scheme
@@ -209,4 +210,4 @@
 
 </div>
 
-@endsection
+</x-app-layout>
