@@ -1,15 +1,6 @@
 <x-app-layout>
-
-
-{{-- @section('title','Schemes List')
-
-@section('content') --}}
-
 <div class="container-fluid">
-
-
 <div class="row mb-3">
-
     <div class="col-md-6">
 
         <h3>
