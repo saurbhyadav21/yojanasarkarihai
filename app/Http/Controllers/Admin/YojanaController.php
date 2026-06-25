@@ -16,7 +16,7 @@ class YojanaController extends Controller
     {
         $schemes = Yojana::latest()->paginate(20);
 
-        return view('admin.schemes.index', compact('schemes'));
+        return view('admin.yojana.index', compact('schemes'));
     }
 
     public function create()
