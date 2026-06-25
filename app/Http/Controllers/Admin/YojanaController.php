@@ -24,7 +24,7 @@ class YojanaController extends Controller
         $categories = Category::where('status', 1)->get();
         $states = State::where('status', 1)->get();
 
-        return view('admin.schemes.create', compact('categories', 'states'));
+        return view('admin.yojana.create', compact('categories', 'states'));
     }
 
     public function store(Request $request)
