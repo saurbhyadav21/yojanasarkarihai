@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\YojanaController;
+
 
 Route::get('/', function () {
     return view('pages.home');
@@ -22,7 +24,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
-// Route::get('/category/{slug}',[CategoryController::class,'show']);
+Route::prefix('admin')
+    ->middleware('auth')
+    ->group(function () {
+
+        Route::resource('yojana', YojanaController::class);
+    });
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
