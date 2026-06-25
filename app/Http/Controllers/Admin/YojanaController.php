@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Scheme;
+use App\Models\Yojana;
 use App\Models\Category;
 use App\Models\State;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ class YojanaController extends Controller
 
     public function index()
     {
-        $schemes = Scheme::latest()->paginate(20);
+        $schemes = Yojana::latest()->paginate(20);
 
         return view('admin.schemes.index', compact('schemes'));
     }
