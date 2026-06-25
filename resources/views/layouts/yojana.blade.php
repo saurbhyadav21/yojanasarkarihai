@@ -166,80 +166,78 @@
 
 </body>
 
-    <!-- Header -->
+<!-- Header -->
 
-    <nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
 
-        <div class="container">
+    <div class="container">
 
-            <a href="#" class="navbar-brand">
-                Yojana Sarkari Hai
-            </a>
+        <a href="#" class="navbar-brand">
+            Yojana Sarkari Hai
+        </a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
 
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
 
-            </button>
+        </button>
 
 
-            <div class="collapse navbar-collapse" id="menu">
+        <div class="collapse navbar-collapse" id="menu">
 
-                <ul class="navbar-nav ms-auto align-items-lg-center">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Schemes</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/yojana">Yojana</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Tools</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Tools</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Documents</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Documents</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">State Wise</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">State Wise</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">News</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">News</a>
+                </li>
 
-                    <li class="nav-item ms-lg-3">
-                        <button class="scheme-btn">
-                            Scheme Finder
-                        </button>
-                    </li>
+                <li class="nav-item ms-lg-3">
+                    <button class="scheme-btn">
+                        Scheme Finder
+                    </button>
+                </li>
 
-                </ul>
-
-            </div>
+            </ul>
 
         </div>
 
-    </nav>
+    </div>
+
+</nav>
 <!-- ======================================
 PREMIUM FOOTER
 ====================================== -->
-   <!-- =====================================================
+<!-- =====================================================
 PART 6
 Sticky Search + Back To Top + Mobile Bottom Navigation +
 Dark Mode Toggle + Social Floating Buttons +
 Scroll Progress Bar
 ====================================================== -->
+ @yield('content')
 
-    <style>
-      /* ==========================================
-SCROLL PROGRESS BAR
-========================================== */
-
-      #progressBar {
+ 
+<style>
+    #progressBar {
         position: fixed;
         top: 0;
         left: 0;
@@ -247,13 +245,13 @@ SCROLL PROGRESS BAR
         height: 4px;
         background: #f97316;
         z-index: 99999;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 STICKY SEARCH
 ========================================== */
 
-      .sticky-search {
+    .sticky-search {
         position: fixed;
         top: 80px;
         right: 25px;
@@ -263,17 +261,17 @@ STICKY SEARCH
         border-radius: 20px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-      }
+    }
 
-      .sticky-search input {
+    .sticky-search input {
         border-radius: 15px;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 BACK TO TOP
 ========================================== */
 
-      .back-to-top {
+    .back-to-top {
         position: fixed;
         bottom: 100px;
         right: 25px;
@@ -290,13 +288,13 @@ BACK TO TOP
         font-size: 22px;
 
         z-index: 999;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 WHATSAPP BUTTON
 ========================================== */
 
-      .whatsapp-btn {
+    .whatsapp-btn {
         position: fixed;
 
         bottom: 170px;
@@ -317,13 +315,13 @@ WHATSAPP BUTTON
         font-size: 25px;
 
         z-index: 999;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 TELEGRAM BUTTON
 ========================================== */
 
-      .telegram-btn {
+    .telegram-btn {
         position: fixed;
 
         bottom: 240px;
@@ -344,13 +342,13 @@ TELEGRAM BUTTON
         font-size: 25px;
 
         z-index: 999;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 DARK MODE BUTTON
 ========================================== */
 
-      .dark-btn {
+    .dark-btn {
         position: fixed;
 
         left: 25px;
@@ -367,13 +365,13 @@ DARK MODE BUTTON
         color: white;
 
         z-index: 999;
-      }
+    }
 
-      /* ==========================================
+    /* ==========================================
 MOBILE BOTTOM NAVIGATION
 ========================================== */
 
-      .mobile-nav {
+    .mobile-nav {
         position: fixed;
 
         bottom: 0;
@@ -386,144 +384,141 @@ MOBILE BOTTOM NAVIGATION
         box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
 
         z-index: 9999;
-      }
+    }
 
-      .mobile-nav a {
+    .mobile-nav a {
         color: #1d4ed8;
         text-decoration: none;
         font-size: 13px;
-      }
+    }
 
-      @media (min-width: 992px) {
+    @media (min-width: 992px) {
         .mobile-nav {
-          display: none;
+            display: none;
         }
-      }
-    </style>
+    }
+</style>
 
-    <!-- Progress Bar -->
+<!-- Progress Bar -->
 
-    <div id="progressBar"></div>
+<div id="progressBar"></div>
 
-    <!-- Sticky Search -->
+<!-- Sticky Search -->
 
-    <div class="sticky-search d-none d-lg-block">
-      <h6 class="mb-3">Search Yojana</h6>
+<div class="sticky-search d-none d-lg-block">
+    <h6 class="mb-3">Search Yojana</h6>
 
-      <div class="input-group">
+    <div class="input-group">
         <input class="form-control" placeholder="PM Kisan, PM Awas" />
 
         <button class="btn btn-warning">Search</button>
-      </div>
     </div>
+</div>
 
-    <!-- Telegram -->
+<!-- Telegram -->
 
-    <a href="#" class="telegram-btn">
-      <i class="bi bi-telegram"></i>
-    </a>
+<a href="#" class="telegram-btn">
+    <i class="bi bi-telegram"></i>
+</a>
 
-    <!-- Whatsapp -->
+<!-- Whatsapp -->
 
-    <a href="#" class="whatsapp-btn">
-      <i class="bi bi-whatsapp"></i>
-    </a>
+<a href="#" class="whatsapp-btn">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
-    <!-- Back To Top -->
+<!-- Back To Top -->
 
-    <button
-      class="back-to-top"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-    >
-      ↑
-    </button>
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    ↑
+</button>
 
-    <!-- Dark Mode -->
+<!-- Dark Mode -->
 
-    <button class="dark-btn" onclick="toggleDark()">🌙</button>
+<button class="dark-btn" onclick="toggleDark()">🌙</button>
 
-    <!-- Mobile Bottom Navigation -->
+<!-- Mobile Bottom Navigation -->
 
-    <div class="mobile-nav py-2">
-      <div class="container">
+<div class="mobile-nav py-2">
+    <div class="container">
         <div class="row text-center">
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-house fs-5"></i>
+            <div class="col">
+                <a href="#">
+                    <i class="bi bi-house fs-5"></i>
 
-              <br />
+                    <br />
 
-              Home
-            </a>
-          </div>
+                    Home
+                </a>
+            </div>
 
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-grid fs-5"></i>
+            <div class="col">
+                <a href="#">
+                    <i class="bi bi-grid fs-5"></i>
 
-              <br />
+                    <br />
 
-              Schemes
-            </a>
-          </div>
+                    Schemes
+                </a>
+            </div>
 
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-search fs-5"></i>
+            <div class="col">
+                <a href="#">
+                    <i class="bi bi-search fs-5"></i>
 
-              <br />
+                    <br />
 
-              Search
-            </a>
-          </div>
+                    Search
+                </a>
+            </div>
 
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-tools fs-5"></i>
+            <div class="col">
+                <a href="#">
+                    <i class="bi bi-tools fs-5"></i>
 
-              <br />
+                    <br />
 
-              Tools
-            </a>
-          </div>
+                    Tools
+                </a>
+            </div>
 
-          <div class="col">
-            <a href="#">
-              <i class="bi bi-newspaper fs-5"></i>
+            <div class="col">
+                <a href="#">
+                    <i class="bi bi-newspaper fs-5"></i>
 
-              <br />
+                    <br />
 
-              News
-            </a>
-          </div>
+                    News
+                </a>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <script>
-      /* Scroll Progress Bar */
+<script>
+    /* Scroll Progress Bar */
 
-      window.onscroll = function () {
+    window.onscroll = function() {
         let winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
+            document.body.scrollTop || document.documentElement.scrollTop;
 
         let height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
 
         let scrolled = (winScroll / height) * 100;
 
         document.getElementById("progressBar").style.width = scrolled + "%";
-      };
+    };
 
-      /* Dark Mode */
+    /* Dark Mode */
 
-      function toggleDark() {
+    function toggleDark() {
         document.body.classList.toggle("bg-dark");
 
         document.body.classList.toggle("text-white");
-      }
-    </script>
+    }
+</script>
 <footer class="footer py-5">
 
     <div class="container">
