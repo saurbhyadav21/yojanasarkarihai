@@ -227,7 +227,303 @@
 <!-- ======================================
 PREMIUM FOOTER
 ====================================== -->
+   <!-- =====================================================
+PART 6
+Sticky Search + Back To Top + Mobile Bottom Navigation +
+Dark Mode Toggle + Social Floating Buttons +
+Scroll Progress Bar
+====================================================== -->
 
+    <style>
+      /* ==========================================
+SCROLL PROGRESS BAR
+========================================== */
+
+      #progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: #f97316;
+        z-index: 99999;
+      }
+
+      /* ==========================================
+STICKY SEARCH
+========================================== */
+
+      .sticky-search {
+        position: fixed;
+        top: 80px;
+        right: 25px;
+        width: 320px;
+        background: white;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .sticky-search input {
+        border-radius: 15px;
+      }
+
+      /* ==========================================
+BACK TO TOP
+========================================== */
+
+      .back-to-top {
+        position: fixed;
+        bottom: 100px;
+        right: 25px;
+
+        width: 55px;
+        height: 55px;
+
+        border: none;
+
+        background: #1d4ed8;
+        color: white;
+
+        border-radius: 50%;
+        font-size: 22px;
+
+        z-index: 999;
+      }
+
+      /* ==========================================
+WHATSAPP BUTTON
+========================================== */
+
+      .whatsapp-btn {
+        position: fixed;
+
+        bottom: 170px;
+        right: 25px;
+
+        width: 55px;
+        height: 55px;
+
+        border-radius: 50%;
+
+        background: #16a34a;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 25px;
+
+        z-index: 999;
+      }
+
+      /* ==========================================
+TELEGRAM BUTTON
+========================================== */
+
+      .telegram-btn {
+        position: fixed;
+
+        bottom: 240px;
+        right: 25px;
+
+        width: 55px;
+        height: 55px;
+
+        border-radius: 50%;
+
+        background: #0ea5e9;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 25px;
+
+        z-index: 999;
+      }
+
+      /* ==========================================
+DARK MODE BUTTON
+========================================== */
+
+      .dark-btn {
+        position: fixed;
+
+        left: 25px;
+        bottom: 30px;
+
+        width: 60px;
+        height: 60px;
+
+        border: none;
+
+        border-radius: 50%;
+
+        background: #111827;
+        color: white;
+
+        z-index: 999;
+      }
+
+      /* ==========================================
+MOBILE BOTTOM NAVIGATION
+========================================== */
+
+      .mobile-nav {
+        position: fixed;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+
+        z-index: 9999;
+      }
+
+      .mobile-nav a {
+        color: #1d4ed8;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      @media (min-width: 992px) {
+        .mobile-nav {
+          display: none;
+        }
+      }
+    </style>
+
+    <!-- Progress Bar -->
+
+    <div id="progressBar"></div>
+
+    <!-- Sticky Search -->
+
+    <div class="sticky-search d-none d-lg-block">
+      <h6 class="mb-3">Search Yojana</h6>
+
+      <div class="input-group">
+        <input class="form-control" placeholder="PM Kisan, PM Awas" />
+
+        <button class="btn btn-warning">Search</button>
+      </div>
+    </div>
+
+    <!-- Telegram -->
+
+    <a href="#" class="telegram-btn">
+      <i class="bi bi-telegram"></i>
+    </a>
+
+    <!-- Whatsapp -->
+
+    <a href="#" class="whatsapp-btn">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+
+    <button
+      class="back-to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </button>
+
+    <!-- Dark Mode -->
+
+    <button class="dark-btn" onclick="toggleDark()">🌙</button>
+
+    <!-- Mobile Bottom Navigation -->
+
+    <div class="mobile-nav py-2">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-house fs-5"></i>
+
+              <br />
+
+              Home
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-grid fs-5"></i>
+
+              <br />
+
+              Schemes
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-search fs-5"></i>
+
+              <br />
+
+              Search
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-tools fs-5"></i>
+
+              <br />
+
+              Tools
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="#">
+              <i class="bi bi-newspaper fs-5"></i>
+
+              <br />
+
+              News
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* Scroll Progress Bar */
+
+      window.onscroll = function () {
+        let winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+
+        let height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        let scrolled = (winScroll / height) * 100;
+
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+
+      /* Dark Mode */
+
+      function toggleDark() {
+        document.body.classList.toggle("bg-dark");
+
+        document.body.classList.toggle("text-white");
+      }
+    </script>
 <footer class="footer py-5">
 
     <div class="container">
