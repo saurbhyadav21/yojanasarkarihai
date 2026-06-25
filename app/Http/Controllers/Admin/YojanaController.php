@@ -9,7 +9,7 @@ use App\Models\State;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class SchemeController extends Controller
+class YojanaController extends Controller
 {
 
     public function index()
