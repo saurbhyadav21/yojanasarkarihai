@@ -115,13 +115,13 @@
 
             <div class="d-flex gap-2">
 
-                <a href="{{ route('yojana.edit', $yojana->id) }}" class="btn btn-primary btn-sm">
+                {{-- <a href="{{ route('yojana.edit', $yojana->id) }}" class="btn btn-primary btn-sm">
 
                     Edit
 
-                </a>
+                </a> --}}
 
-                <form action="{{ route('yojana.destroy', $yojana->id) }}" method="POST">
+                {{-- <form action="{{ route('yojana.destroy', $yojana->id) }}" method="POST">
 
                     @csrf
                     @method('DELETE')
@@ -132,7 +132,7 @@
 
                     </button>
 
-                </form>
+                </form> --}}
 
             </div>
 
