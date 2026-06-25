@@ -1,204 +1,149 @@
 <x-app-layout>
-<div class="container-fluid">
-<div class="row mb-3">
-    <div class="col-md-6">
 
-        <h3>
-            All Schemes
-        </h3>
+<div class="container-fluid py-4">
+
+    <div class="row mb-4">
+
+        <div class="col-lg-6">
+
+            <h2 class="fw-bold mb-1">
+                Sarkari Yojana Management
+            </h2>
+
+            <p class="text-muted">
+                Manage all schemes from one place
+            </p>
+
+        </div>
+
+        <div class="col-lg-6 text-lg-end">
+
+            <a href="{{ route('yojana.create') }}"
+               class="btn btn-success">
+
+                + Add New Scheme
+
+            </a>
+
+        </div>
 
     </div>
 
-    <div class="col-md-6 text-end">
+    <div class="row mb-4">
 
-        <a href="{{ route('yojana.create') }}"
-           class="btn btn-success">
+        <div class="col-md-4">
 
-            Add New Scheme
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Total Schemes
+                    </h6>
+
+                    <h2 class="fw-bold">
+                        {{ $schemes->total() }}
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Active Schemes
+                    </h6>
+
+                    <h2 class="fw-bold text-success">
+                        {{ $schemes->where('status',1)->count() }}
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body">
+
+                    <h6 class="text-muted">
+                        Inactive Schemes
+                    </h6>
+
+                    <h2 class="fw-bold text-danger">
+                        {{ $schemes->where('status',0)->count() }}
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <thead class="table-light">
+
+<tr>
+
+    <th>ID</th>
+
+    <th>Image</th>
+
+    <th>Scheme Name</th>
+
+    <th>Slug</th>
+
+    <th>Status</th>
+
+    <th>Actions</th>
+
+</tr>
+
+</thead>
+
+<td>
+
+    <div class="d-flex gap-2">
+
+        <a href="{{ route('schemes.edit',$scheme->id) }}"
+           class="btn btn-primary btn-sm">
+
+            Edit
 
         </a>
 
-    </div>
+        <form action="{{ route('schemes.destroy',$scheme->id) }}"
+              method="POST">
 
-</div>
+            @csrf
+            @method('DELETE')
 
-@if(session('success'))
+            <button type="submit"
+                    class="btn btn-danger btn-sm"
+                    onclick="return confirm('Delete Scheme?')">
 
-    <div class="alert alert-success">
+                Delete
 
-        {{ session('success') }}
+            </button>
 
-    </div>
-
-@endif
-
-<div class="card shadow-sm">
-
-    <div class="card-body">
-
-        <div class="table-responsive">
-
-            <table class="table table-bordered table-hover align-middle">
-
-                <thead class="table-dark">
-
-                    <tr>
-
-                        <th width="60">
-                            ID
-                        </th>
-
-                        <th width="100">
-                            Image
-                        </th>
-
-                        <th>
-                            Title
-                        </th>
-
-                        <th>
-                            Slug
-                        </th>
-
-                        <th>
-                            Status
-                        </th>
-
-                        <th width="180">
-                            Action
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    @forelse($schemes as $scheme)
-
-                    <tr>
-
-                        <td>
-                            {{ $scheme->id }}
-                        </td>
-
-                        <td>
-
-                            @if($scheme->featured_image)
-
-                                <img src="{{ asset('uploads/schemes/'.$scheme->featured_image) }}"
-                                     width="80"
-                                     class="img-thumbnail">
-
-                            @else
-
-                                No Image
-
-                            @endif
-
-                        </td>
-
-                        <td>
-
-                            <strong>
-
-                                {{ $scheme->title }}
-
-                            </strong>
-
-                        </td>
-
-                        <td>
-
-                            {{ $scheme->slug }}
-
-                        </td>
-
-                        <td>
-
-                            @if($scheme->status)
-
-                                <span class="badge bg-success">
-
-                                    Active
-
-                                </span>
-
-                            @else
-
-                                <span class="badge bg-danger">
-
-                                    Inactive
-
-                                </span>
-
-                            @endif
-
-                        </td>
-
-                        <td>
-
-                            <a href="{{ route('schemes.edit',$scheme->id) }}"
-                               class="btn btn-primary btn-sm">
-
-                                Edit
-
-                            </a>
-
-                            <form action="{{ route('schemes.destroy',$scheme->id) }}"
-                                  method="POST"
-                                  style="display:inline-block;">
-
-                                @csrf
-
-                                @method('DELETE')
-
-                                <button type="submit"
-                                        class="btn btn-danger btn-sm"
-                                        onclick="return confirm('Delete this scheme?')">
-
-                                    Delete
-
-                                </button>
-
-                            </form>
-
-                        </td>
-
-                    </tr>
-
-                    @empty
-
-                    <tr>
-
-                        <td colspan="6"
-                            class="text-center">
-
-                            No Schemes Found
-
-                        </td>
-
-                    </tr>
-
-                    @endforelse
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-        <div class="mt-3">
-
-            {{ $schemes->links() }}
-
-        </div>
+        </form>
 
     </div>
 
-</div>
-
+</td>
 
 </div>
 
 </x-app-layout>
+
